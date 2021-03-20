@@ -11,6 +11,17 @@ K inductor choke coil reactor magnetic
 F https://datasheet.lcsc.com/szlcsc/1912111437_Sunlord-MWSA0603S-8R2MT_C408450.pdf
 $ENDCMP
 #
+$CMP ADXL345BCCZ-RL7
+D ADXL345BCCZ-RL7
+K Beschleunigungsmesser X, Y, Z Achse ±2g, 4g, 8g, 16g 0,05Hz bis 1,6kHz 14-LGA (3x5)
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL345.pdf
+$ENDCMP
+#
+$CMP ADXL362BCCZ-RLX
+D Accelerometer X, Y, Z Axis ±2g, 4g, 8g 6.25Hz ~ 400Hz 16-LGA (3x3.25)
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL362.pdf
+$ENDCMP
+#
 $CMP IRLML0030TRPBF
 D N-Channel 30V 5.3A (Ta) 1.3W (Ta) Surface Mount Micro3™/SOT-23
 F https://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df
@@ -24,6 +35,11 @@ $ENDCMP
 $CMP LTST-S270TBKT
 D LED Indication - Discrete
 F https://datasheet.lcsc.com/szlcsc/1810231514_Lite-On-LTST-S270TBKT_C125115.pdf
+$ENDCMP
+#
+$CMP PSM712-LF-T7
+D TVS SOT-23(SOT-23-3) ROHS
+F ProTek-Devices-PSM712-LF-T7_C32677.pdf
 $ENDCMP
 #
 $CMP STM32F446VE
