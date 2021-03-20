@@ -1,3 +1,34 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 8u2
+D Inductor
+K inductor choke coil reactor magnetic
+F https://datasheet.lcsc.com/szlcsc/1912111437_Sunlord-MWSA0603S-8R2MT_C408450.pdf
+$ENDCMP
+#
+$CMP IRLML0030TRPBF
+D N-Channel 30V 5.3A (Ta) 1.3W (Ta) Surface Mount Micro3™/SOT-23
+F https://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df
+$ENDCMP
+#
+$CMP IRLML6402TRPBF
+D P-Channel 20V 3.7A (Ta) 1.3W (Ta) Surface Mount Micro3™/SOT-23
+F https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c
+$ENDCMP
+#
+$CMP LTST-S270TBKT
+D LED Indication - Discrete
+F https://datasheet.lcsc.com/szlcsc/1810231514_Lite-On-LTST-S270TBKT_C125115.pdf
+$ENDCMP
+#
+$CMP STM32F446VE
+D ARM® Cortex®-M4 STM32F4 Mikrocontroller IC 32-Bit 180MHz 512KB (512K x 8) FLASH 100-LQFP (14x14)
+F https://www.st.com/resource/en/datasheet/stm32f446ve.pdf
+$ENDCMP
+#
+$CMP TPS54302DDCR
+D Buck Switching Regulator IC Positive Adjustable 0.596V 1 Output 3A SOT-23-6 Thin, TSOT-23-6
+F https://www.ti.com/lit/gpn/TPS54302
+$ENDCMP
+#
 #End Doc Library

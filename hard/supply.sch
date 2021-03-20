@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -13,4 +13,37 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L led_matrix:8u2 L?
+U 1 1 6056783E
+P 5200 3850
+F 0 "L?" H 5252 3896 50  0000 L CNN
+F 1 "8u2" H 5252 3805 50  0000 L CNN
+F 2 "led_matrix:L_Sunking_MWSA0603S" H 5200 3850 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_Sunlord-MWSA0603S-8R2MT_C408450.pdf" H 5200 3850 50  0001 C CNN
+F 4 "" H 5200 3850 50  0001 C CNN "DigiKey_Part_Number"
+F 5 "" H 5200 3850 50  0001 C CNN "Mouser_Part_Number"
+F 6 "C408450" H 5200 3850 50  0001 C CNN "JLCPCB_Part_Number"
+F 7 "Sunlord" H 5200 3850 50  0001 C CNN "MF"
+F 8 "MWSA0603S-8R2MT" H 5200 3850 50  0001 C CNN "MPN"
+F 9 "8.2UH ±20% 5A 60MΩ SMD,6.6X7.0X3.0MM POWER INDUCTORS ROHS" H 5200 3850 50  0001 C CNN "Description"
+	1    5200 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L led_matrix:TPS54302DDCR DCDC?
+U 1 1 6056940B
+P 3950 3250
+F 0 "DCDC?" H 3950 3415 50  0000 C CNN
+F 1 "TPS54302DDCR" H 3950 3324 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 3950 3250 50  0001 C CNN
+F 3 "https://www.ti.com/lit/gpn/TPS54302" H 3950 3250 50  0001 C CNN
+F 4 "296-46237-1-ND" H 3950 3250 50  0001 C CNN "DigiKey_Part_Number"
+F 5 "C311983" H 3950 3250 50  0001 C CNN "JLCPCB_Part_Number"
+F 6 "Texas Instruments" H 3950 3250 50  0001 C CNN "MF"
+F 7 "TPS54302DDCR" H 3950 3250 50  0001 C CNN "MPN"
+F 8 "IC REG BUCK ADJ 3A TSOT23-6" H 3950 3250 50  0001 C CNN "Description"
+	1    3950 3250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
