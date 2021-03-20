@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:C C1
-U 1 1 60557FA3
-P 14150 5800
-F 0 "C1" H 14035 5846 50  0000 R CNN
-F 1 "C" H 14035 5755 50  0000 R CNN
-F 2 "" H 14188 5650 50  0001 C CNN
-F 3 "~" H 14150 5800 50  0001 C CNN
-	1    14150 5800
-	-1   0    0    -1  
-$EndComp
-$Comp
 L led_matrix:STM32F446VE MCU1
 U 1 1 6059CDEC
 P 8000 1250
