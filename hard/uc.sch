@@ -1067,14 +1067,6 @@ Text GLabel 9950 5800 2    50   Input ~ 0
 y12
 Text GLabel 9950 5700 2    50   Input ~ 0
 y13
-Text Label 13100 1900 0    50   ~ 0
-SWCLK
-Text Label 13100 2100 0    50   ~ 0
-SWDIO
-Text Label 13100 2200 0    50   ~ 0
-nRST
-Text Label 13100 2300 0    50   ~ 0
-SWO
 Wire Wire Line
 	13050 1900 13600 1900
 Wire Wire Line
