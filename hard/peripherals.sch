@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 69 69
 Title ""
 Date ""
 Rev ""
@@ -437,4 +437,6 @@ Wire Wire Line
 	3750 4050 3750 3950
 Wire Wire Line
 	4250 4050 4250 3950
+Text Notes 1900 1800 0    197  ~ 0
+Sensory & Analog Signals
 $EndSCHEMATC
