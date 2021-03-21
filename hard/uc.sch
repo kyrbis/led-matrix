@@ -76,21 +76,6 @@ F 8 "497-15375-ND" H 6750 5400 50  0001 C CNN "DigiKey_Part_Number"
 $EndComp
 $Comp
 L led_matrix:STM32F446VE MCU1
-U 5 1 605B01CA
-P 5900 6600
-F 0 "MCU1" H 5900 6765 50  0000 C CNN
-F 1 "STM32F446VE" H 5900 6674 50  0000 C CNN
-F 2 "" H 6450 6950 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/stm32f446ve.pdf" H 6450 6950 50  0001 C CNN
-F 4 "C91929" H 5900 6600 50  0001 C CNN "JLCPCB_Part_Number"
-F 5 "STMicroelectronics" H 5900 6600 50  0001 C CNN "MF"
-F 6 "STM32F446VET6" H 5900 6600 50  0001 C CNN "MPN"
-F 7 "ST MICROELECTRONICS LQFP-100_14X14X05P ROHS" H 5900 6600 50  0001 C CNN "Description"
-	5    5900 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L led_matrix:STM32F446VE MCU1
 U 6 1 605B418A
 P 4250 7800
 F 0 "MCU1" H 4250 7965 50  0000 C CNN
@@ -240,7 +225,7 @@ F 3 "~" H 12300 9900 50  0001 C CNN
 	1    12300 9900
 	-1   0    0    -1  
 $EndComp
-Text Notes 14550 7450 0    50   ~ 0
+Text Notes 15250 7100 0    50   ~ 0
 power led / status led
 $Comp
 L power:+3V3 #PWR09
@@ -718,10 +703,10 @@ F 3 "" H 11950 6550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11950 6550 12000 6550
-Text GLabel 11050 2100 2    50   Input ~ 0
-SWCLK
-Text GLabel 11050 2200 2    50   Input ~ 0
-SWDIO
+Text GLabel 9950 5500 2    50   Input ~ 0
+y15
+Text GLabel 9950 5600 2    50   Input ~ 0
+y14
 Text GLabel 10850 6200 0    50   Input ~ 0
 nRST
 $Comp
@@ -744,125 +729,430 @@ Wire Wire Line
 	10900 6200 10850 6200
 Wire Wire Line
 	11200 6200 11250 6200
-Text GLabel 13900 3800 2    50   Input ~ 0
+Text GLabel 13950 1900 2    50   Input ~ 0
 SWCLK
-Text GLabel 13900 4200 2    50   Input ~ 0
+Text GLabel 13950 2300 2    50   Input ~ 0
 SWDIO
 $Comp
 L power:GND #PWR0205
 U 1 1 6266B103
-P 13550 3900
-F 0 "#PWR0205" H 13550 3650 50  0001 C CNN
-F 1 "GND" V 13555 3772 50  0000 R CNN
-F 2 "" H 13550 3900 50  0001 C CNN
-F 3 "" H 13550 3900 50  0001 C CNN
-	1    13550 3900
+P 13600 2000
+F 0 "#PWR0205" H 13600 1750 50  0001 C CNN
+F 1 "GND" V 13605 1872 50  0000 R CNN
+F 2 "" H 13600 2000 50  0001 C CNN
+F 3 "" H 13600 2000 50  0001 C CNN
+	1    13600 2000
 	0    -1   -1   0   
 $EndComp
-Text GLabel 13900 4500 2    50   Input ~ 0
+Text GLabel 13950 2600 2    50   Input ~ 0
 nRST
 $Comp
 L power:+3V3 #PWR0206
 U 1 1 6266BC9A
-P 13500 3650
-F 0 "#PWR0206" H 13500 3500 50  0001 C CNN
-F 1 "+3V3" H 13515 3823 50  0000 C CNN
-F 2 "" H 13500 3650 50  0001 C CNN
-F 3 "" H 13500 3650 50  0001 C CNN
-	1    13500 3650
+P 13250 1750
+F 0 "#PWR0206" H 13250 1600 50  0001 C CNN
+F 1 "+3V3" H 13265 1923 50  0000 C CNN
+F 2 "" H 13250 1750 50  0001 C CNN
+F 3 "" H 13250 1750 50  0001 C CNN
+	1    13250 1750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R200
 U 1 1 62670D10
-P 13700 4500
-F 0 "R200" V 13493 4500 50  0000 C CNN
-F 1 "22R" V 13584 4500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 13630 4500 50  0001 C CNN
-F 3 "~" H 13700 4500 50  0001 C CNN
-	1    13700 4500
+P 13750 2600
+F 0 "R200" V 13543 2600 50  0000 C CNN
+F 1 "22R" V 13634 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 13680 2600 50  0001 C CNN
+F 3 "~" H 13750 2600 50  0001 C CNN
+	1    13750 2600
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R199
 U 1 1 62673063
-P 13700 4200
-F 0 "R199" V 13493 4200 50  0000 C CNN
-F 1 "22R" V 13584 4200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 13630 4200 50  0001 C CNN
-F 3 "~" H 13700 4200 50  0001 C CNN
-	1    13700 4200
+P 13750 2300
+F 0 "R199" V 13543 2300 50  0000 C CNN
+F 1 "22R" V 13634 2300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 13680 2300 50  0001 C CNN
+F 3 "~" H 13750 2300 50  0001 C CNN
+	1    13750 2300
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x06 J3
 U 1 1 62682F3D
-P 13100 3900
-F 0 "J3" H 13018 4317 50  0000 C CNN
-F 1 "Conn_01x06" H 13018 4226 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 13100 3900 50  0001 C CNN
-F 3 "~" H 13100 3900 50  0001 C CNN
-	1    13100 3900
+P 12850 2000
+F 0 "J3" H 12768 2417 50  0000 C CNN
+F 1 "Conn_01x06" H 12768 2326 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 12850 2000 50  0001 C CNN
+F 3 "~" H 12850 2000 50  0001 C CNN
+	1    12850 2000
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R R201
 U 1 1 62690430
-P 13700 4800
-F 0 "R201" V 13493 4800 50  0000 C CNN
-F 1 "22R" V 13584 4800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 13630 4800 50  0001 C CNN
-F 3 "~" H 13700 4800 50  0001 C CNN
-	1    13700 4800
+P 13750 2900
+F 0 "R201" V 13543 2900 50  0000 C CNN
+F 1 "22R" V 13634 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 13680 2900 50  0001 C CNN
+F 3 "~" H 13750 2900 50  0001 C CNN
+	1    13750 2900
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R198
 U 1 1 62694A57
-P 13700 3800
-F 0 "R198" V 13493 3800 50  0000 C CNN
-F 1 "22R" V 13584 3800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 13630 3800 50  0001 C CNN
-F 3 "~" H 13700 3800 50  0001 C CNN
-	1    13700 3800
+P 13750 1900
+F 0 "R198" V 13543 1900 50  0000 C CNN
+F 1 "22R" V 13634 1900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 13680 1900 50  0001 C CNN
+F 3 "~" H 13750 1900 50  0001 C CNN
+	1    13750 1900
 	0    1    1    0   
 $EndComp
+Text GLabel 3550 7000 0    50   Input ~ 0
+y19
+Text GLabel 13950 2900 2    50   Input ~ 0
+SWO
+Wire Wire Line
+	13050 1800 13250 1800
+Wire Wire Line
+	13250 1800 13250 1750
+Wire Wire Line
+	13900 2900 13950 2900
+Wire Wire Line
+	13900 2600 13950 2600
+Wire Wire Line
+	13900 2300 13950 2300
+Wire Wire Line
+	13900 1900 13950 1900
+$Comp
+L led_matrix:LTST-S270TBKT D1028
+U 1 1 626C5DF5
+P 15950 8050
+F 0 "D1028" V 15996 7970 50  0000 R CNN
+F 1 "LTST-S270TBKT" V 15905 7970 50  0000 R CNN
+F 2 "led_matrix:LED_LiteOn_LTST-S270TBKT" H 16000 7900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810231514_Lite-On-LTST-S270TBKT_C125115.pdf" H 16000 7900 50  0001 C CNN
+F 4 "LTST-S270TBKT-5A-ND" H 15950 7800 50  0001 C CNN "DigiKey_Part_Number"
+F 5 "859-LTST-S270TBKT" H 15950 7800 50  0001 C CNN "Mouser_Part_Number"
+F 6 "C125115" H 15950 7800 50  0001 C CNN "JLCPCB_Part_Number"
+F 7 "Lite-On Inc." H 15950 7800 50  0001 C CNN "MF"
+F 8 "LTST-S270TBKT" H 15950 7800 50  0001 C CNN "MPN"
+F 9 "LED 468NM RA BLUE CLEAR 0603 SMD" H 15950 7800 50  0001 C CNN "Description"
+	1    15950 8050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R206
+U 1 1 626CBEFE
+P 15950 7700
+F 0 "R206" H 15880 7654 50  0000 R CNN
+F 1 "3K3" H 15880 7745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 15880 7700 50  0001 C CNN
+F 3 "~" H 15950 7700 50  0001 C CNN
+	1    15950 7700
+	-1   0    0    1   
+$EndComp
+$Comp
+L led_matrix:2N7002,215 M97
+U 1 1 626CDB9D
+P 15900 8450
+F 0 "M97" H 16028 8496 50  0000 L CNN
+F 1 "2N7002,215" H 16028 8405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 16700 8450 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/2N7002.pdf" H 15900 8450 50  0001 C CNN
+F 4 "C65189" H 16300 8350 50  0001 C CNN "JLCPCB_Part_Number"
+F 5 "Nexperia" H 16700 8450 50  0001 C CNN "MF"
+F 6 "2N7002,215" H 16700 8450 50  0001 C CNN "MPN"
+F 7 "MOSFET N TRENCH 60V 300MA 2.5V @ 250UA 5 ? @ 500MA,10V SOT-23(SOT-23-3) ROHS" H 17800 8450 50  0001 C CNN "Description"
+	1    15900 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0207
+U 1 1 626CFC7B
+P 15950 7500
+F 0 "#PWR0207" H 15950 7350 50  0001 C CNN
+F 1 "+5V" H 15965 7673 50  0000 C CNN
+F 2 "" H 15950 7500 50  0001 C CNN
+F 3 "" H 15950 7500 50  0001 C CNN
+	1    15950 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R207
+U 1 1 626D1240
+P 15450 8450
+F 0 "R207" V 15243 8450 50  0000 C CNN
+F 1 "1K8" V 15334 8450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 15380 8450 50  0001 C CNN
+F 3 "~" H 15450 8450 50  0001 C CNN
+	1    15450 8450
+	0    1    1    0   
+$EndComp
+Text GLabel 15250 8450 0    50   Input ~ 0
+LED_STATUS
+Wire Wire Line
+	15250 8450 15300 8450
+Wire Wire Line
+	15600 8450 15650 8450
+$Comp
+L power:GND #PWR0208
+U 1 1 626DED4D
+P 15950 8700
+F 0 "#PWR0208" H 15950 8450 50  0001 C CNN
+F 1 "GND" H 15955 8527 50  0000 C CNN
+F 2 "" H 15950 8700 50  0001 C CNN
+F 3 "" H 15950 8700 50  0001 C CNN
+	1    15950 8700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15950 8700 15950 8650
+Wire Wire Line
+	15950 8250 15950 8200
+Wire Wire Line
+	15950 7900 15950 7850
+Wire Wire Line
+	15950 7500 15950 7550
+Text GLabel 3550 3150 0    50   Input ~ 0
+LED_STATUS
+Wire Wire Line
+	13500 2300 13600 2300
+Wire Wire Line
+	13450 2600 13600 2600
+Wire Wire Line
+	13400 2900 13600 2900
+Text GLabel 3550 3750 0    50   Input ~ 0
+I2C1_SCL
+Text GLabel 3550 3850 0    50   Input ~ 0
+I2C1_SDA
+$Comp
+L Device:R R204
+U 1 1 627218B8
+P 15350 5200
+F 0 "R204" H 15281 5154 50  0000 R CNN
+F 1 "3K3" H 15281 5245 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 15280 5200 50  0001 C CNN
+F 3 "~" H 15350 5200 50  0001 C CNN
+	1    15350 5200
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R205
+U 1 1 62734FB0
+P 15450 5200
+F 0 "R205" H 15380 5154 50  0000 R CNN
+F 1 "3K3" H 15380 5245 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 15380 5200 50  0001 C CNN
+F 3 "~" H 15450 5200 50  0001 C CNN
+	1    15450 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR0209
+U 1 1 62752189
+P 15400 4950
+F 0 "#PWR0209" H 15400 4800 50  0001 C CNN
+F 1 "+3V3" H 15415 5123 50  0000 C CNN
+F 2 "" H 15400 4950 50  0001 C CNN
+F 3 "" H 15400 4950 50  0001 C CNN
+	1    15400 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 15350 5400 3    50   Input ~ 0
+I2C1_SDA
+Text GLabel 15450 5400 3    50   Input ~ 0
+I2C1_SCL
+Wire Wire Line
+	15350 5050 15350 5000
+Wire Wire Line
+	15450 5000 15450 5050
+Wire Wire Line
+	15400 5000 15400 4950
+Connection ~ 15400 5000
+Text Notes 16900 3950 0    50   ~ 0
+todo: recheck pins\n
+Text GLabel 3550 2000 0    50   Input ~ 0
+x0
+Text GLabel 3550 2100 0    50   Input ~ 0
+x1
+Text GLabel 3550 2200 0    50   Input ~ 0
+x2
+Text GLabel 3550 2300 0    50   Input ~ 0
+x3
+Text GLabel 3550 2400 0    50   Input ~ 0
+x4
+Text GLabel 3550 2500 0    50   Input ~ 0
+x5
+Text GLabel 3550 2600 0    50   Input ~ 0
+x6
+Text GLabel 3550 2700 0    50   Input ~ 0
+x7
+Text GLabel 11050 2700 2    50   Input ~ 0
+x8
+Text GLabel 11050 2600 2    50   Input ~ 0
+x9
+Text GLabel 11050 2500 2    50   Input ~ 0
+x10
+Text GLabel 11050 2400 2    50   Input ~ 0
+x11
+Text GLabel 11050 2300 2    50   Input ~ 0
+x12
+Text GLabel 11500 2200 2    50   Input ~ 0
+x13
+Text GLabel 11500 2100 2    50   Input ~ 0
+x14
+Text GLabel 11050 2000 2    50   Input ~ 0
+x15
+Text GLabel 3550 4300 0    50   Input ~ 0
+x16
+Text GLabel 3550 4400 0    50   Input ~ 0
+x17
+Text GLabel 3550 4500 0    50   Input ~ 0
+x18
+Text GLabel 3550 4600 0    50   Input ~ 0
+x19
+Text GLabel 3550 4700 0    50   Input ~ 0
+x20
+$Comp
+L led_matrix:STM32F446VE MCU1
+U 5 1 605B01CA
+P 5900 6600
+F 0 "MCU1" H 5900 6765 50  0000 C CNN
+F 1 "STM32F446VE" H 5900 6674 50  0000 C CNN
+F 2 "" H 6450 6950 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/stm32f446ve.pdf" H 6450 6950 50  0001 C CNN
+F 4 "C91929" H 5900 6600 50  0001 C CNN "JLCPCB_Part_Number"
+F 5 "STMicroelectronics" H 5900 6600 50  0001 C CNN "MF"
+F 6 "STM32F446VET6" H 5900 6600 50  0001 C CNN "MPN"
+F 7 "ST MICROELECTRONICS LQFP-100_14X14X05P ROHS" H 5900 6600 50  0001 C CNN "Description"
+	5    5900 6600
+	1    0    0    -1  
+$EndComp
+Text GLabel 3550 4800 0    50   Input ~ 0
+x21
+Text GLabel 3550 4900 0    50   Input ~ 0
+x22
+Text GLabel 3550 5000 0    50   Input ~ 0
+x23
+Text GLabel 11850 5000 2    50   Input ~ 0
+x24
+Text GLabel 11850 4900 2    50   Input ~ 0
+x25
+Text GLabel 11850 4800 2    50   Input ~ 0
+x26
+Text GLabel 11850 4700 2    50   Input ~ 0
+x27
+Text GLabel 11850 4600 2    50   Input ~ 0
+x28
+Text GLabel 11850 4500 2    50   Input ~ 0
+x29
+Text GLabel 11850 4400 2    50   Input ~ 0
+x30
+Text GLabel 11850 4300 2    50   Input ~ 0
+x31
+Text GLabel 9950 6200 2    50   Input ~ 0
+y8
+Text GLabel 9950 6100 2    50   Input ~ 0
+y9
+Text GLabel 9950 6000 2    50   Input ~ 0
+y10
+Text GLabel 9950 5900 2    50   Input ~ 0
+y11
+Text GLabel 9950 5800 2    50   Input ~ 0
+y12
+Text GLabel 9950 5700 2    50   Input ~ 0
+y13
+Text Label 13100 1900 0    50   ~ 0
+SWCLK
+Text Label 13100 2100 0    50   ~ 0
+SWDIO
+Text Label 13100 2200 0    50   ~ 0
+nRST
+Text Label 13100 2300 0    50   ~ 0
+SWO
+Wire Wire Line
+	13050 1900 13600 1900
+Wire Wire Line
+	13050 2000 13600 2000
+Wire Wire Line
+	13500 2300 13500 2100
+Wire Wire Line
+	13050 2100 13500 2100
+Wire Wire Line
+	13450 2600 13450 2200
+Wire Wire Line
+	13050 2200 13450 2200
+Wire Wire Line
+	13400 2900 13400 2300
+Wire Wire Line
+	13050 2300 13400 2300
+Text GLabel 3550 6700 0    50   Input ~ 0
+y16
+Text GLabel 3550 6800 0    50   Input ~ 0
+y17
+Text GLabel 3550 6900 0    50   Input ~ 0
+y18
+Wire Wire Line
+	11050 2100 11500 2100
+Wire Wire Line
+	11500 2200 11050 2200
+Text GLabel 11400 2100 1    50   Input ~ 0
+SWCLK
+Text GLabel 11400 2200 3    50   Input ~ 0
+SWDIO
 Text GLabel 3550 3450 0    50   Input ~ 0
 SWO
-Text GLabel 13900 4800 2    50   Input ~ 0
-SWO
+Text GLabel 3550 7100 0    50   Input ~ 0
+y20
+Text GLabel 3550 7200 0    50   Input ~ 0
+y21
+Text GLabel 3550 7300 0    50   Input ~ 0
+y22
+Text GLabel 3550 7400 0    50   Input ~ 0
+y23
+Text GLabel 8250 7400 2    50   Input ~ 0
+y24
+Text GLabel 8250 7300 2    50   Input ~ 0
+y25
+Text GLabel 8250 7200 2    50   Input ~ 0
+y26
+Text GLabel 8250 7100 2    50   Input ~ 0
+y27
+Text GLabel 8250 7000 2    50   Input ~ 0
+y28
+Text GLabel 8250 6900 2    50   Input ~ 0
+y29
+Text GLabel 8250 6800 2    50   Input ~ 0
+y30
+Text GLabel 8250 6700 2    50   Input ~ 0
+y31
+Text GLabel 3550 5700 0    50   Input ~ 0
+y2
+Text GLabel 3550 6200 0    50   Input ~ 0
+y7
+Text GLabel 3550 6100 0    50   Input ~ 0
+y6
+Text GLabel 3550 6000 0    50   Input ~ 0
+y5
+Text GLabel 3550 5900 0    50   Input ~ 0
+y4
+Text GLabel 3550 5800 0    50   Input ~ 0
+y3
+Text GLabel 3550 5600 0    50   Input ~ 0
+y1
+Text GLabel 3550 5500 0    50   Input ~ 0
+y0
 Wire Wire Line
-	13300 3700 13500 3700
+	15350 5400 15350 5350
 Wire Wire Line
-	13500 3700 13500 3650
+	15450 5400 15450 5350
 Wire Wire Line
-	13550 3800 13300 3800
+	15400 5000 15450 5000
 Wire Wire Line
-	13550 3900 13300 3900
-Wire Wire Line
-	13300 4000 13500 4000
-Wire Wire Line
-	13500 4000 13500 4200
-Wire Wire Line
-	13500 4200 13550 4200
-Wire Wire Line
-	13300 4100 13450 4100
-Wire Wire Line
-	13450 4100 13450 4500
-Wire Wire Line
-	13450 4500 13550 4500
-Wire Wire Line
-	13300 4200 13400 4200
-Wire Wire Line
-	13400 4200 13400 4800
-Wire Wire Line
-	13400 4800 13550 4800
-Wire Wire Line
-	13850 4800 13900 4800
-Wire Wire Line
-	13850 4500 13900 4500
-Wire Wire Line
-	13850 4200 13900 4200
-Wire Wire Line
-	13850 3800 13900 3800
+	15350 5000 15400 5000
 $EndSCHEMATC
