@@ -31,21 +31,6 @@ F 8 "497-15375-ND" H 7300 1900 50  0001 C CNN "DigiKey_Part_Number"
 $EndComp
 $Comp
 L led_matrix:STM32F446VE MCU1
-U 2 1 605A0D1E
-P 7600 3050
-F 0 "MCU1" H 7600 3215 50  0000 C CNN
-F 1 "STM32F446VE" H 7600 3124 50  0000 C CNN
-F 2 "led_matrix:LQFP-100_14x14mm_P0.5mm" H 8150 3400 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/stm32f446ve.pdf" H 8150 3400 50  0001 C CNN
-F 4 "C91929" H 7600 3050 50  0001 C CNN "JLCPCB_Part_Number"
-F 5 "STMicroelectronics" H 7600 3050 50  0001 C CNN "MF"
-F 6 "STM32F446VET6" H 7600 3050 50  0001 C CNN "MPN"
-F 7 "ST MICROELECTRONICS LQFP-100_14X14X05P ROHS" H 7600 3050 50  0001 C CNN "Description"
-	2    7600 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L led_matrix:STM32F446VE MCU1
 U 3 1 605A8D95
 P 7700 4200
 F 0 "MCU1" H 7700 4365 50  0000 C CNN
@@ -692,7 +677,7 @@ Wire Wire Line
 Text GLabel 3550 6000 0    50   Input ~ 0
 y15
 Text GLabel 9950 5600 2    50   Input ~ 0
-y14
+y26
 $Comp
 L Device:R R7
 U 1 1 62644FF8
@@ -714,9 +699,9 @@ Wire Wire Line
 Wire Wire Line
 	11200 6200 11250 6200
 Text GLabel 13950 1900 2    50   Input ~ 0
-x8
-Text GLabel 13950 2300 2    50   Input ~ 0
 x10
+Text GLabel 13950 2300 2    50   Input ~ 0
+x8
 $Comp
 L power:GND #PWR02
 U 1 1 6266B103
@@ -931,21 +916,21 @@ x6
 Text GLabel 3550 2700 0    50   Input ~ 0
 x7
 Text GLabel 11050 2100 2    50   Input ~ 0
-x8
-Text GLabel 11050 2600 2    50   Input ~ 0
-x9
-Text GLabel 11050 2200 2    50   Input ~ 0
 x10
+Text GLabel 11050 2600 2    50   Input ~ 0
+x4
+Text GLabel 11050 2200 2    50   Input ~ 0
+x8
 Text GLabel 11050 2400 2    50   Input ~ 0
-x11
+x1
 Text GLabel 11050 2300 2    50   Input ~ 0
-x12
+x2
 Text GLabel 11050 2700 2    50   Input ~ 0
-x13
+x5
 Text GLabel 11050 2500 2    50   Input ~ 0
-x14
+x3
 Text GLabel 11050 2000 2    50   Input ~ 0
-x15
+x0
 $Comp
 L led_matrix:STM32F446VE MCU1
 U 5 1 605B01CA
@@ -964,29 +949,27 @@ $EndComp
 Text GLabel 8250 7400 2    50   Input ~ 0
 x24
 Text GLabel 8250 7300 2    50   Input ~ 0
-x25
+x14
 Text GLabel 8250 7200 2    50   Input ~ 0
-x26
+x15
 Text GLabel 8250 7100 2    50   Input ~ 0
 x27
 Text GLabel 8250 7000 2    50   Input ~ 0
-x28
-Text GLabel 8250 6900 2    50   Input ~ 0
-x29
+x7
 Text GLabel 8250 6800 2    50   Input ~ 0
-x30
+x11
 Text GLabel 8250 6700 2    50   Input ~ 0
-x31
+x12
 Text GLabel 9950 6200 2    50   Input ~ 0
-y8
+y16
 Text GLabel 3550 5600 0    50   Input ~ 0
 y9
 Text GLabel 9950 6000 2    50   Input ~ 0
-y10
+y22
 Text GLabel 3550 5500 0    50   Input ~ 0
 y11
 Text GLabel 9950 5800 2    50   Input ~ 0
-y12
+y20
 Text GLabel 11850 4600 2    50   Input ~ 0
 y13
 Wire Wire Line
@@ -1008,47 +991,43 @@ Wire Wire Line
 Text GLabel 3550 5700 0    50   Input ~ 0
 y17
 Text GLabel 3550 4700 0    50   Input ~ 0
-y18
+y0
 Text GLabel 3550 3450 0    50   Input ~ 0
 SWO
 Text GLabel 3550 4900 0    50   Input ~ 0
-y20
+y10
 Text GLabel 11850 4800 2    50   Input ~ 0
 y21
 Text GLabel 11850 4500 2    50   Input ~ 0
 y23
 Text GLabel 3550 4800 0    50   Input ~ 0
-y24
+y2
 Text GLabel 11850 4400 2    50   Input ~ 0
 y25
 Text GLabel 3550 5000 0    50   Input ~ 0
-y26
+y12
 Text GLabel 3550 4300 0    50   Input ~ 0
-y27
-Text GLabel 11850 4900 2    50   Input ~ 0
-y28
-Text GLabel 3550 4400 0    50   Input ~ 0
 y29
-Text GLabel 11850 4300 2    50   Input ~ 0
-y30
-Text GLabel 3550 4500 0    50   Input ~ 0
+Text GLabel 3550 4400 0    50   Input ~ 0
 y31
+Text GLabel 3550 4500 0    50   Input ~ 0
+y6
 Text GLabel 9950 5900 2    50   Input ~ 0
-y2
+y24
 Text GLabel 3550 5800 0    50   Input ~ 0
 y7
 Text GLabel 9950 5500 2    50   Input ~ 0
-y6
+y28
 Text GLabel 3550 5900 0    50   Input ~ 0
 y5
 Text GLabel 9950 5700 2    50   Input ~ 0
-y4
+y14
 Text GLabel 3550 6100 0    50   Input ~ 0
 y3
 Text GLabel 3550 6200 0    50   Input ~ 0
 y1
 Text GLabel 9950 6100 2    50   Input ~ 0
-y0
+y18
 Text GLabel 3550 3150 0    50   Input ~ 0
 3MM5_TIP
 Text GLabel 3550 3250 0    50   Input ~ 0
@@ -1091,14 +1070,39 @@ Text GLabel 3550 7200 0    50   Input ~ 0
 x19
 Text GLabel 3550 7100 0    50   Input ~ 0
 x18
+Text GLabel 3550 6900 0    50   Input ~ 0
+LED_STATUS
+Text GLabel 3550 4600 0    50   Input ~ 0
+y4
+Text GLabel 10850 6200 0    50   Input ~ 0
+nRST
+Text GLabel 11850 4300 2    50   Input ~ 0
+y27
+Text GLabel 11850 5000 2    50   Input ~ 0
+y30
+Text GLabel 11850 4900 2    50   Input ~ 0
+y8
+$Comp
+L led_matrix:STM32F446VE MCU1
+U 2 1 605A0D1E
+P 7600 3050
+F 0 "MCU1" H 7600 3215 50  0000 C CNN
+F 1 "STM32F446VE" H 7600 3124 50  0000 C CNN
+F 2 "led_matrix:LQFP-100_14x14mm_P0.5mm" H 8150 3400 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/stm32f446ve.pdf" H 8150 3400 50  0001 C CNN
+F 4 "C91929" H 7600 3050 50  0001 C CNN "JLCPCB_Part_Number"
+F 5 "STMicroelectronics" H 7600 3050 50  0001 C CNN "MF"
+F 6 "STM32F446VET6" H 7600 3050 50  0001 C CNN "MPN"
+F 7 "ST MICROELECTRONICS LQFP-100_14X14X05P ROHS" H 7600 3050 50  0001 C CNN "Description"
+	2    7600 3050
+	1    0    0    -1  
+$EndComp
+Text GLabel 3550 3550 0    50   Input ~ 0
+x6
+Text GLabel 8250 6900 2    50   Input ~ 0
+x9
 Text GLabel 3550 7000 0    50   Input ~ 0
 x17
 Text GLabel 3550 3350 0    50   Input ~ 0
 x16
-Text GLabel 3550 6900 0    50   Input ~ 0
-LED_STATUS
-Text GLabel 3550 4600 0    50   Input ~ 0
-y16
-Text GLabel 10850 6200 0    50   Input ~ 0
-nRST
 $EndSCHEMATC
