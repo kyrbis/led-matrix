@@ -19,7 +19,7 @@ U 1 1 6059CDEC
 P 7300 1900
 F 0 "MCU1" H 7300 2065 50  0000 C CNN
 F 1 "STM32F446VE" H 7300 1974 50  0000 C CNN
-F 2 "" H 7850 2250 50  0001 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 7850 2250 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/stm32f446ve.pdf" H 7850 2250 50  0001 C CNN
 F 4 "C91929" H 7300 1900 50  0001 C CNN "JLCPCB_Part_Number"
 F 5 "STMicroelectronics" H 7300 1900 50  0001 C CNN "MF"
@@ -34,7 +34,7 @@ U 2 1 605A0D1E
 P 7600 3050
 F 0 "MCU1" H 7600 3215 50  0000 C CNN
 F 1 "STM32F446VE" H 7600 3124 50  0000 C CNN
-F 2 "" H 8150 3400 50  0001 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 8150 3400 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/stm32f446ve.pdf" H 8150 3400 50  0001 C CNN
 F 4 "C91929" H 7600 3050 50  0001 C CNN "JLCPCB_Part_Number"
 F 5 "STMicroelectronics" H 7600 3050 50  0001 C CNN "MF"
@@ -49,7 +49,7 @@ U 3 1 605A8D95
 P 7700 4200
 F 0 "MCU1" H 7700 4365 50  0000 C CNN
 F 1 "STM32F446VE" H 7700 4274 50  0000 C CNN
-F 2 "" H 8250 4550 50  0001 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 8250 4550 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/stm32f446ve.pdf" H 8250 4550 50  0001 C CNN
 F 4 "C91929" H 7700 4200 50  0001 C CNN "JLCPCB_Part_Number"
 F 5 "STMicroelectronics" H 7700 4200 50  0001 C CNN "MF"
@@ -76,26 +76,11 @@ F 8 "497-15375-ND" H 6750 5400 50  0001 C CNN "DigiKey_Part_Number"
 $EndComp
 $Comp
 L led_matrix:STM32F446VE MCU1
-U 6 1 605B418A
-P 4250 7800
-F 0 "MCU1" H 4250 7965 50  0000 C CNN
-F 1 "STM32F446VE" H 4250 7874 50  0000 C CNN
-F 2 "" H 4800 8150 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/stm32f446ve.pdf" H 4800 8150 50  0001 C CNN
-F 4 "C91929" H 4250 7800 50  0001 C CNN "JLCPCB_Part_Number"
-F 5 "STMicroelectronics" H 4250 7800 50  0001 C CNN "MF"
-F 6 "STM32F446VET6" H 4250 7800 50  0001 C CNN "MPN"
-F 7 "ST MICROELECTRONICS LQFP-100_14X14X05P ROHS" H 4250 7800 50  0001 C CNN "Description"
-	6    4250 7800
-	1    0    0    -1  
-$EndComp
-$Comp
-L led_matrix:STM32F446VE MCU1
 U 7 1 605B81AB
 P 12900 6100
 F 0 "MCU1" H 12900 6265 50  0000 C CNN
 F 1 "STM32F446VE" H 12900 6174 50  0000 C CNN
-F 2 "" H 13450 6450 50  0001 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 13450 6450 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/stm32f446ve.pdf" H 13450 6450 50  0001 C CNN
 F 4 "C91929" H 12900 6100 50  0001 C CNN "JLCPCB_Part_Number"
 F 5 "STMicroelectronics" H 12900 6100 50  0001 C CNN "MF"
@@ -730,9 +715,9 @@ Wire Wire Line
 Wire Wire Line
 	11200 6200 11250 6200
 Text GLabel 13950 1900 2    50   Input ~ 0
-SWCLK
+x14
 Text GLabel 13950 2300 2    50   Input ~ 0
-SWDIO
+x13
 $Comp
 L power:GND #PWR02
 U 1 1 6266B103
@@ -749,12 +734,12 @@ nRST
 $Comp
 L power:+3V3 #PWR01
 U 1 1 6266BC9A
-P 13250 1750
-F 0 "#PWR01" H 13250 1600 50  0001 C CNN
-F 1 "+3V3" H 13265 1923 50  0000 C CNN
-F 2 "" H 13250 1750 50  0001 C CNN
-F 3 "" H 13250 1750 50  0001 C CNN
-	1    13250 1750
+P 13600 1750
+F 0 "#PWR01" H 13600 1600 50  0001 C CNN
+F 1 "+3V3" H 13615 1923 50  0000 C CNN
+F 2 "" H 13600 1750 50  0001 C CNN
+F 3 "" H 13600 1750 50  0001 C CNN
+	1    13600 1750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -785,7 +770,7 @@ U 1 1 62682F3D
 P 12850 2000
 F 0 "J1" H 12768 2417 50  0000 C CNN
 F 1 "Conn_01x06" H 12768 2326 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 12850 2000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 12850 2000 50  0001 C CNN
 F 3 "~" H 12850 2000 50  0001 C CNN
 	1    12850 2000
 	-1   0    0    -1  
@@ -817,9 +802,9 @@ y19
 Text GLabel 13950 2900 2    50   Input ~ 0
 SWO
 Wire Wire Line
-	13050 1800 13250 1800
+	13050 1800 13600 1800
 Wire Wire Line
-	13250 1800 13250 1750
+	13600 1800 13600 1750
 Wire Wire Line
 	13900 2900 13950 2900
 Wire Wire Line
@@ -930,51 +915,7 @@ Text GLabel 3550 3750 0    50   Input ~ 0
 I2C1_SCL
 Text GLabel 3550 3850 0    50   Input ~ 0
 I2C1_SDA
-$Comp
-L Device:R R5
-U 1 1 627218B8
-P 15350 5200
-F 0 "R5" H 15281 5154 50  0000 R CNN
-F 1 "3K3" H 15281 5245 50  0000 R CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 15280 5200 50  0001 C CNN
-F 3 "~" H 15350 5200 50  0001 C CNN
-	1    15350 5200
-	1    0    0    1   
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 62734FB0
-P 15450 5200
-F 0 "R6" H 15380 5154 50  0000 R CNN
-F 1 "3K3" H 15380 5245 50  0000 R CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 15380 5200 50  0001 C CNN
-F 3 "~" H 15450 5200 50  0001 C CNN
-	1    15450 5200
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3V3 #PWR03
-U 1 1 62752189
-P 15400 4950
-F 0 "#PWR03" H 15400 4800 50  0001 C CNN
-F 1 "+3V3" H 15415 5123 50  0000 C CNN
-F 2 "" H 15400 4950 50  0001 C CNN
-F 3 "" H 15400 4950 50  0001 C CNN
-	1    15400 4950
-	1    0    0    -1  
-$EndComp
-Text GLabel 15350 5400 3    50   Input ~ 0
-I2C1_SDA
-Text GLabel 15450 5400 3    50   Input ~ 0
-I2C1_SCL
-Wire Wire Line
-	15350 5050 15350 5000
-Wire Wire Line
-	15450 5000 15450 5050
-Wire Wire Line
-	15400 5000 15400 4950
-Connection ~ 15400 5000
-Text Notes 16900 3950 0    50   ~ 0
+Text Notes 12300 4150 0    50   ~ 0
 todo: recheck pins\n
 Text GLabel 3550 2000 0    50   Input ~ 0
 x0
@@ -1002,9 +943,9 @@ Text GLabel 11050 2400 2    50   Input ~ 0
 x11
 Text GLabel 11050 2300 2    50   Input ~ 0
 x12
-Text GLabel 11500 2200 2    50   Input ~ 0
+Text GLabel 11050 2200 2    50   Input ~ 0
 x13
-Text GLabel 11500 2100 2    50   Input ~ 0
+Text GLabel 11050 2100 2    50   Input ~ 0
 x14
 Text GLabel 11050 2000 2    50   Input ~ 0
 x15
@@ -1024,7 +965,7 @@ U 5 1 605B01CA
 P 5900 6600
 F 0 "MCU1" H 5900 6765 50  0000 C CNN
 F 1 "STM32F446VE" H 5900 6674 50  0000 C CNN
-F 2 "" H 6450 6950 50  0001 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 6450 6950 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/stm32f446ve.pdf" H 6450 6950 50  0001 C CNN
 F 4 "C91929" H 5900 6600 50  0001 C CNN "JLCPCB_Part_Number"
 F 5 "STMicroelectronics" H 5900 6600 50  0001 C CNN "MF"
@@ -1083,20 +1024,12 @@ Wire Wire Line
 	13400 2900 13400 2300
 Wire Wire Line
 	13050 2300 13400 2300
-Text GLabel 3550 6700 0    50   Input ~ 0
+Text GLabel 2950 6700 0    50   Input ~ 0
 y16
-Text GLabel 3550 6800 0    50   Input ~ 0
+Text GLabel 2950 6800 0    50   Input ~ 0
 y17
 Text GLabel 3550 6900 0    50   Input ~ 0
 y18
-Wire Wire Line
-	11050 2100 11500 2100
-Wire Wire Line
-	11500 2200 11050 2200
-Text GLabel 11400 2100 1    50   Input ~ 0
-SWCLK
-Text GLabel 11400 2200 3    50   Input ~ 0
-SWDIO
 Text GLabel 3550 3450 0    50   Input ~ 0
 SWO
 Text GLabel 3550 7100 0    50   Input ~ 0
@@ -1139,18 +1072,34 @@ Text GLabel 3550 5600 0    50   Input ~ 0
 y1
 Text GLabel 3550 5500 0    50   Input ~ 0
 y0
-Wire Wire Line
-	15350 5400 15350 5350
-Wire Wire Line
-	15450 5400 15450 5350
-Wire Wire Line
-	15400 5000 15450 5000
-Wire Wire Line
-	15350 5000 15400 5000
 Text GLabel 3550 3150 0    50   Input ~ 0
 3MM5_TIP
 Text GLabel 3550 3250 0    50   Input ~ 0
 3MM5_RING
 Text GLabel 3550 3650 0    50   Input ~ 0
 LED_STATUS
+Text GLabel 11650 3150 2    50   Input ~ 0
+SPI2_MOSI
+Text GLabel 11650 3250 2    50   Input ~ 0
+SPI2_MISO
+Text GLabel 11650 3350 2    50   Input ~ 0
+SPI2_SCLK
+Text GLabel 11650 3450 2    50   Input ~ 0
+SPI2_CS_ACC
+Text Notes 12800 1800 2    50   ~ 0
++3V3
+Text Notes 12800 1900 2    50   ~ 0
+SWCLK
+Text Notes 12800 2000 2    50   ~ 0
+GND
+Text Notes 12800 2100 2    50   ~ 0
+SWDIO
+Text Notes 12800 2200 2    50   ~ 0
+nRST
+Text Notes 12800 2300 2    50   ~ 0
+SWO
+Text GLabel 3550 6700 0    50   Input ~ 0
+ACC_INT1
+Text GLabel 3550 6800 0    50   Input ~ 0
+ACC_INT2
 $EndSCHEMATC
