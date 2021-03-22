@@ -14,107 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:C C25
-U 1 1 613EB9FD
-P 8300 2150
-F 0 "C25" H 8186 2104 50  0000 R CNN
-F 1 "0u1/6V3" H 8186 2195 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 8338 2000 50  0001 C CNN
-F 3 "~" H 8300 2150 50  0001 C CNN
-	1    8300 2150
-	1    0    0    1   
-$EndComp
-$Comp
-L Device:C C24
-U 1 1 613EE98F
-P 7700 2150
-F 0 "C24" H 7586 2104 50  0000 R CNN
-F 1 "0u1/6V3" H 7586 2195 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 7738 2000 50  0001 C CNN
-F 3 "~" H 7700 2150 50  0001 C CNN
-	1    7700 2150
-	1    0    0    1   
-$EndComp
-$Comp
-L power:+3V3 #PWR0200
-U 1 1 613EF1A2
-P 7650 1800
-F 0 "#PWR0200" H 7650 1650 50  0001 C CNN
-F 1 "+3V3" H 7665 1973 50  0000 C CNN
-F 2 "" H 7650 1800 50  0001 C CNN
-F 3 "" H 7650 1800 50  0001 C CNN
-	1    7650 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0201
-U 1 1 613F21F8
-P 7650 2600
-F 0 "#PWR0201" H 7650 2350 50  0001 C CNN
-F 1 "GND" H 7655 2427 50  0000 C CNN
-F 2 "" H 7650 2600 50  0001 C CNN
-F 3 "" H 7650 2600 50  0001 C CNN
-	1    7650 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8450 2550 8400 2550
-Wire Wire Line
-	7650 2550 7650 2600
-Wire Wire Line
-	7700 2300 7700 2550
-Connection ~ 7700 2550
-Wire Wire Line
-	7700 2550 7650 2550
-Wire Wire Line
-	8300 2300 8300 2550
-Connection ~ 8300 2550
-Wire Wire Line
-	8300 2550 7700 2550
-Wire Wire Line
-	8400 2550 8400 2450
-Wire Wire Line
-	8400 2450 8450 2450
-Connection ~ 8400 2550
-Wire Wire Line
-	8400 2550 8300 2550
-Wire Wire Line
-	8400 2450 8400 2350
-Wire Wire Line
-	8400 2350 8450 2350
-Connection ~ 8400 2450
-Wire Wire Line
-	8450 1950 8300 1950
-Wire Wire Line
-	8300 1950 8300 2000
-Wire Wire Line
-	7650 1800 7650 1850
-Wire Wire Line
-	7650 1850 7700 1850
-Connection ~ 7700 1850
-Text GLabel 9150 1850 2    50   Input ~ 0
-spi_miso
-Text GLabel 9150 1950 2    50   Input ~ 0
-spi_mosi
-Text GLabel 9150 2050 2    50   Input ~ 0
-spi_sclk
-Text GLabel 9150 2250 2    50   Input ~ 0
-spi_cs_acc
-Text GLabel 9150 2450 2    50   Input ~ 0
-acc_int1
-Text GLabel 9150 2550 2    50   Input ~ 0
-acc_int2
-Wire Wire Line
-	7700 1850 7700 2000
-Wire Wire Line
-	8300 1850 7700 1850
-Wire Wire Line
-	8450 1850 8300 1850
-Connection ~ 8300 1850
-Connection ~ 8300 1950
-Wire Wire Line
-	8300 1950 8300 1850
-$Comp
 L led_matrix:ADXL345BCCZ-RL7 U2
 U 1 1 61431535
 P 8900 4400
@@ -128,22 +27,6 @@ F 6 "Analog Devices Inc." H 8900 4400 50  0001 C CNN "MF"
 F 7 "ADXL345BCCZ-RL7" H 8900 4400 50  0001 C CNN "MPN"
 F 8 "ACCEL 2-16G I2C/SPI 14LGA" H 8900 4400 50  0001 C CNN "Description"
 	1    8900 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L led_matrix:ADXL362BCCZ-RLX U1
-U 1 1 61433069
-P 8800 1750
-F 0 "U1" H 8800 1915 50  0000 C CNN
-F 1 "ADXL362BCCZ-RLX" H 8800 1824 50  0000 C CNN
-F 2 "led_matrix:Sensors_AnalogDevices_ADXL362BCCZ-RX" H 8800 1750 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL362.pdf" H 8800 2250 50  0001 C CNN
-F 4 "ADXL362BCCZ-RL7CT-ND" H 8700 1750 50  0001 C CNN "DigiKey_Part_Number"
-F 5 "C59641" H 8800 1750 50  0001 C CNN "JLCPCB_Part_Number"
-F 6 "Analog Devices" H 8700 1750 50  0001 C CNN "MF"
-F 7 "ADXL362BCCZ-RL" H 8700 1750 50  0001 C CNN "MPN"
-F 8 "ACCELEROMETER 2-8G SPI 16LGA" H 8700 1750 50  0001 C CNN "Description"
-	1    8800 1750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -239,7 +122,7 @@ Text GLabel 9400 5000 2    50   Input ~ 0
 acc_int1
 Text GLabel 9400 5100 2    50   Input ~ 0
 acc_int2
-Text Notes 9850 3650 0    50   ~ 0
+Text Notes 8750 3850 0    50   ~ 0
 spi vs i2c?
 $Comp
 L Connector:AudioJack3_SwitchTR J3

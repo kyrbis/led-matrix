@@ -918,7 +918,7 @@ Wire Wire Line
 	15950 7900 15950 7850
 Wire Wire Line
 	15950 7500 15950 7550
-Text GLabel 3550 3150 0    50   Input ~ 0
+Text GLabel 3550 3350 0    50   Input ~ 0
 LED_STATUS
 Wire Wire Line
 	13500 2300 13600 2300
@@ -1147,4 +1147,10 @@ Wire Wire Line
 	15400 5000 15450 5000
 Wire Wire Line
 	15350 5000 15400 5000
+Text GLabel 3550 3150 0    50   Input ~ 0
+3MM5_TIP
+Text GLabel 3550 3250 0    50   Input ~ 0
+3MM5_RING
+Text GLabel 3550 3650 0    50   Input ~ 0
+LED_STATUS
 $EndSCHEMATC
