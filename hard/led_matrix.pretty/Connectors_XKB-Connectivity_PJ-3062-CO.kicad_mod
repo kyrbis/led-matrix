@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+(module Connectors_XKB-Connectivity_PJ-3062-CO (layer F.Cu) (tedit 605A606B)
+=======
 (module Connectors_XKB-Connectivity_PJ-3062-CO (layer F.Cu) (tedit 605A5FEF)
+>>>>>>> cc3c4a4a7f6ba7f075a2ad026ed2c658a341f19a
   (fp_text reference REF** (at 0 1.25) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -26,8 +30,12 @@
   (pad "" np_thru_hole circle (at 0 -3.6) (size 1.5 1.5) (drill 1.5) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at -4.95 -8.3) (size 1.5 1.5) (drill 1.5) (layers *.Cu *.Mask))
   (model ${LED_MATRIX_3D}/Connectors_XKB-Connectivity_PJ-3062-CO.step
+<<<<<<< HEAD
+    (offset (xyz 0 5.8 0))
+=======
     (at (xyz 0 0 0))
+>>>>>>> cc3c4a4a7f6ba7f075a2ad026ed2c658a341f19a
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
+    (rotate (xyz -90 0 0))
   )
 )
