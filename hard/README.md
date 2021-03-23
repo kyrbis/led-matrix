@@ -1,5 +1,5 @@
 # LED Matrix hardware
-via KiCad, tuned for JLCPCB order
+via KiCad (https://kicad.org/), tuned for order on JLCPCB (https://jlcpcb.com/)
 
 
 ![V3Rv0 Image](./led_matrix_v3rv0.png)
