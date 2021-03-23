@@ -1,4 +1,9 @@
-# led matrix hardware
-Using KiCad
+# LED Matrix hardware
+via KiCad, tuned for JLCPCB order
 
-In order to see 3D data, use `${LED_MATRIX_3D}` as path for your 3D files.
+
+![V3Rv0 Image](./led_matrix_v3rv0.png)
+_V3Rv0 Preview_  
+
+## KiCad Readme
+In order to see 3D packages, setup `${LED_MATRIX_3D}` as path for your .step files
