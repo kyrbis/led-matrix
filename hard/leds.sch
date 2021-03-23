@@ -3,11 +3,11 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 3 69
-Title ""
-Date ""
-Rev ""
-Comp ""
+Sheet 4 70
+Title "LED Matrix V3"
+Date "2021-03-23"
+Rev "0"
+Comp "F2A"
 Comment1 ""
 Comment2 ""
 Comment3 ""
