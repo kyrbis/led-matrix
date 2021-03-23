@@ -1,4 +1,4 @@
-(module "Connectors_SHOU HAN_MICRO 4P DIP" (layer F.Cu) (tedit 60580B66)
+(module Connectors_SHOU-HAN_MICRO-4P-DIP (layer F.Cu) (tedit 605A57C0)
   (fp_text reference REF** (at 0 -7) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -32,4 +32,9 @@
   (pad 6 thru_hole oval (at -3.575 -4.6) (size 1.05 1.4) (drill oval 0.45 0.8) (layers *.Cu *.Mask))
   (pad 6 thru_hole oval (at 3.575 -1.15) (size 1.05 1.4) (drill oval 0.45 0.8) (layers *.Cu *.Mask))
   (pad 6 thru_hole oval (at 3.575 -4.6) (size 1.05 1.4) (drill oval 0.45 0.8) (layers *.Cu *.Mask))
+  (model ${LED_MATRIX_3D}/Connectors_SHOU-HAN_MICRO-4P-DIP.step
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
