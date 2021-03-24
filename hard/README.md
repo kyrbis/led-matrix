@@ -1,5 +1,6 @@
 # LED Matrix hardware
-via KiCad (https://kicad.org/), tuned for order on JLCPCB (https://jlcpcb.com/)
+via KiCad (https://kicad.org/), tuned for order on JLCPCB (https://jlcpcb.com/).  
+All capacitors X7R or better.
 
 
 ![V3Rv0 Image](./led_matrix.png)
