@@ -2,7 +2,7 @@
 via KiCad (https://kicad.org/), tuned for order on JLCPCB (https://jlcpcb.com/)
 
 
-![V3Rv0 Image](./led_matrix_v3rv0.png)
+![V3Rv0 Image](./led_matrix.png)
 _V3Rv0 Preview_  
 
 ## KiCad Readme
