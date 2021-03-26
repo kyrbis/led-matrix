@@ -68,9 +68,10 @@ L Connector_Generic:Conn_01x06 J1
 U 1 1 62682F3D
 P 9600 1650
 F 0 "J1" H 9518 2067 50  0000 C CNN
-F 1 "Conn_01x06" H 9518 1976 50  0000 C CNN
+F 1 "2mm54 1x6" H 9518 1976 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 9600 1650 50  0001 C CNN
 F 3 "~" H 9600 1650 50  0001 C CNN
+F 4 "C492414" H 9600 1650 50  0001 C CNN "LCSC"
 	1    9600 1650
 	-1   0    0    -1  
 $EndComp
