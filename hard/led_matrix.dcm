@@ -47,6 +47,11 @@ D ARM® Cortex®-M4 STM32F4 Mikrocontroller IC 32-Bit 180MHz 512KB (512K x 8) FL
 F https://www.st.com/resource/en/datasheet/stm32f446ve.pdf
 $ENDCMP
 #
+$CMP TPS54202DDCR
+D Buck Switching Regulator IC Positive Adjustable 0.596V 1 Output 2A SOT-23-6 Thin, TSOT-23-6
+F https://www.ti.com/lit/ds/symlink/tps54202.pdf
+$ENDCMP
+#
 $CMP TPS54302DDCR
 D Buck Switching Regulator IC Positive Adjustable 0.596V 1 Output 3A SOT-23-6 Thin, TSOT-23-6
 F https://www.ti.com/lit/gpn/TPS54302
